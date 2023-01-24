@@ -1,0 +1,94 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.about .image {
+  flex: 1 1 40rem;
+}
+.about .image img {
+  width: 100%;
+}
+.about .content {
+  flex: 1 1 40rem;
+}
+.about .content h3 {
+  color: #041e42;
+  font-size: 4rem;
+}
+.about .content h3 span {
+  color: #e67e22;
+}
+.about .content p {
+  font-size: 1.6rem;
+  color: #777;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.about .content .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 3rem;
+}
+
+.dog-food,
+.cat-food {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.dog-food .image,
+.cat-food .image {
+  flex: 1 1 40rem;
+}
+.dog-food .image img,
+.cat-food .image img {
+  width: 100%;
+}
+.dog-food .content,
+.cat-food .content {
+  flex: 1 1 40rem;
+  text-align: center;
+  padding: 2rem;
+}
+.dog-food .content h3,
+.cat-food .content h3 {
+  font-size: 3.5rem;
+  color: #041e42;
+}
+.dog-food .content h3 span,
+.cat-food .content h3 span {
+  color: #e67e22;
+}
+.dog-food .content p,
+.cat-food .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #777;
+  font-size: 1.6rem;
+}
+.dog-food .content .amount,
+.cat-food .content .amount {
+  font-size: 3.5rem;
+  color: #041e42;
+  padding: 0.5rem 0;
+}
+.dog-food .content a img,
+.cat-food .content a img {
+  height: 15rem;
+  margin-top: 1rem;
+}
+.dog-food .content a:hover img,
+.cat-food .content a:hover img {
+  transform: rotate(15deg);
+}
+
+.cat-food {
+  flex-wrap: wrap-reverse;
+}/*# sourceMappingURL=About.css.map */

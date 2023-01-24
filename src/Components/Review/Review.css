@@ -1,0 +1,46 @@
+.review h2 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.review .box-container {
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.review .box-container .box {
+  flex-basis: 24%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 3px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.review .box-container .box:hover {
+  transform: translateY(-10px);
+}
+.review .box-container .box p {
+  font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+  .review .box-container .box {
+    flex-basis: 100%;
+  }
+}
+.review .box-container .box .user {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.review .box-container .box .user h4 {
+  color: #0bb6ff;
+}
+.review .box-container .box .user img {
+  width: 25%;
+  margin-right: 20px;
+  border-radius: 5px;
+}/*# sourceMappingURL=Review.css.map */

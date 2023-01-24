@@ -1,0 +1,76 @@
+@import "../Styles/Styles.scss";
+.product{
+    h2{@include Pd();}
+
+    .box-container {
+        @include grid2();
+
+        .box {
+            position: relative;
+            overflow: hidden;
+    
+            &:hover .image img {
+                transform: scale(1.1);
+            }
+    
+            &:hover .icons {
+                transform: translateX(0rem);
+            }
+    
+            .image {
+                height: 45rem;
+                width: $width;
+                overflow: hidden;
+    
+                img {
+                    height: $width;
+                    width: $width;
+                    -o-object-fit: cover;
+                       object-fit: cover;
+                }
+            }
+
+            .icons {
+                position: $absolute;
+                top: 1rem;
+                right: 2rem;
+                z-index: 10;
+                transform: translateX(10rem);
+
+                .fa {
+                    display: block;
+                    width: 3rem;
+                    height: 3rem;
+                    line-height: 3rem;
+                    margin-top: 1rem;
+                    color: $black;
+                    text-align: center;
+
+                    &:hover {
+                        color: $carrot-color;
+                    }
+                }
+            }
+
+            .content {
+                padding: 1rem 0;
+                text-align: center;
+
+                h3 {
+                    font-size: 2rem;
+                    color: $black;
+                    padding-bottom: 0.5rem;
+                }
+
+                .amount {
+                    font-size: 1.7rem;
+                    color: $carrot-color;
+                }
+            }
+        }
+
+        @media (max-width: 768px){
+            @include media();
+        }
+    }    
+}

@@ -1,0 +1,96 @@
+.footer {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background: url(/src/image/footer_background.jpg) no-repeat;
+  background-position: center;
+  background-size: center;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+.footer .box-container .box {
+  color: #eee;
+}
+.footer .box-container .box h2 {
+  font-size: 2.7em;
+  font-weight: 900;
+  font-variant: small-caps;
+  font-family: monospace;
+  letter-spacing: 0.2em;
+  color: #e67e22;
+}
+.footer .box-container .box .in-touch {
+  text-align: start;
+}
+.footer .box-container .box .in-touch h3 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-family: monospace;
+}
+.footer .box-container .box .in-touch p {
+  font-size: 1.54rem;
+  font-family: monospace;
+}
+.footer .box-container .box .day h5 {
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-family: monospace;
+}
+.footer .box-container .box .day .follow {
+  padding-top: 2rem;
+}
+.footer .box-container .box .day .follow h3 {
+  font-family: monospace;
+}
+.footer .box-container .box .day .follow .icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding: 2rem 4rem;
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+.footer .box-container .box .day .follow .icons .fa:hover {
+  color: #e67e22;
+}
+.footer .box-container .box a {
+  display: block;
+  padding-top: 1.5rem;
+  font-variant: small-caps;
+  font-size: 2rem;
+  font-family: monospace;
+  color: aquamarine;
+  letter-spacing: 0.3em;
+}
+@media (max-width: 768px) {
+  .footer .box-container {
+    display: block;
+    padding: 2rem;
+  }
+  .footer .box-container h2 {
+    padding-top: 3rem;
+  }
+}
+.footer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+}
+.footer .credit {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 6rem;
+  margin-top: 2.5rem;
+}
+.footer .credit span {
+  color: #e67e22;
+}/*# sourceMappingURL=Footer.css.map */

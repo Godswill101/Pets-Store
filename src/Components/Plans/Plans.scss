@@ -1,0 +1,68 @@
+@import "../Styles/Styles.scss";
+.plan{
+    h2{@include Pd();}
+
+    .box-container{
+        @include grid();
+
+        .box {
+            position: relative;;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            background: $white-gray;
+
+            .btn {
+                position: $absolute;
+                bottom: -2rem;
+                right: 2rem;
+                background: $white;
+            }
+
+            .title {
+                text-align: center;
+                color: $carrot-color;
+                font-size: 2rem;
+            }
+
+            .day {
+                text-align: center;
+                color: $black;
+                font-size: 3.5rem;
+            }
+
+            .icon {
+                color: $carrot-color;
+                width: 8.5rem;
+                height: 8.5rem;
+                padding: 2rem 0;
+            }
+
+            .list {
+                margin: 1rem 0;
+
+                p {
+                    @include flex();
+                    justify-content: space-between;
+                    font-size: 1.6rem;
+                    color: $gray;
+                    padding: 1rem 0;
+
+                    .fa-check {color: $carrot-color;}
+                }
+            }
+
+            .amount {
+                font-size: 5rem;
+                font-weight: bolder;
+                color: #130f40;
+
+                span {font-size: 3rem;}
+            }
+        }
+
+        @media (max-width: 768px){
+            @include media();
+        }
+    }
+}

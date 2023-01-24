@@ -1,0 +1,102 @@
+@import "../Styles/Styles.scss";
+.about {
+  @include flex();
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .image {
+    flex: $flex;
+
+    img {
+      width: $width;
+    }
+  }
+  
+  .content {
+    flex: $flex;
+
+    h3 {
+      color: $black;
+      font-size: 4rem;
+
+      span {
+        color: $carrot-color;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $gray;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+
+    .box-container{
+      @include grid();
+      justify-content: center;
+      align-items: center;
+      height: $width;
+      padding-top: 3rem;
+    }
+  }
+}
+
+
+
+// // // // // //
+.dog-food,
+.cat-food {
+  @include flex();
+  flex-wrap: wrap;
+  padding: 2rem 0;
+
+  .image {
+    flex: $flex;
+
+    img {
+      width: $width;
+    }
+  }
+
+  .content {
+    flex: $flex;
+    text-align: center;
+    padding: 2rem;
+
+    h3 {
+      font-size: 3.5rem;
+      color: $black;
+
+      span {
+        color: $carrot-color;
+      }
+    }
+
+    p {
+      padding: 1rem 0;
+      line-height: 2;
+      color: $gray;
+      font-size: 1.6rem;
+    }
+
+    .amount {
+      font-size: 3.5rem;
+      color: $black;
+      padding: 0.5rem 0;
+    }
+
+    a{
+      img {
+        height: 15rem;
+        margin-top: 1rem;
+      }
+  
+      &:hover img{
+        transform: rotate(15deg);
+      }
+    }
+  }
+}
+.cat-food {
+  flex-wrap: wrap-reverse;
+}

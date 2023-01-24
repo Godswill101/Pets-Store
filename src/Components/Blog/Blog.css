@@ -1,0 +1,51 @@
+.blog h2 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.blog .box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.blog .box-container .box {
+  text-align: center;
+}
+.blog .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.blog .box-container .box .image {
+  height: 25rem;
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: -3rem;
+}
+.blog .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.2s linear;
+}
+.blog .box-container .box .content {
+  padding: 2rem;
+  padding-top: 5rem;
+  background: #fff;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+.blog .box-container .box .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.blog .box-container .box .content span {
+  font-size: 15px;
+}
+.blog .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .blog .box-container {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=Blog.css.map */

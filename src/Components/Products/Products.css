@@ -1,0 +1,67 @@
+.product h2 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.product .box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.product .box-container .box {
+  position: relative;
+  overflow: hidden;
+}
+.product .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.product .box-container .box:hover .icons {
+  transform: translateX(0rem);
+}
+.product .box-container .box .image {
+  height: 45rem;
+  width: 100%;
+  overflow: hidden;
+}
+.product .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.product .box-container .box .icons {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  z-index: 10;
+  transform: translateX(10rem);
+}
+.product .box-container .box .icons .fa {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  color: #041e42;
+  text-align: center;
+}
+.product .box-container .box .icons .fa:hover {
+  color: #e67e22;
+}
+.product .box-container .box .content {
+  padding: 1rem 0;
+  text-align: center;
+}
+.product .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #041e42;
+  padding-bottom: 0.5rem;
+}
+.product .box-container .box .content .amount {
+  font-size: 1.7rem;
+  color: #e67e22;
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .product .box-container {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=Products.css.map */

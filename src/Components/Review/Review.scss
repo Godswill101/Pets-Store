@@ -1,0 +1,51 @@
+@import "../Styles/Styles.scss";
+.review{
+    h2{@include Pd();}
+
+    .box-container{
+        width: 96%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        cursor: pointer;
+    
+        .box{
+            flex-basis: 24%;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px 3px rgba(0,0,0,0.55);
+            cursor: pointer;
+            transition: transform 0.5s;
+    
+            &:hover{
+                transform: translateY(-10px);
+            }
+    
+            p {
+                font-size: 1.1rem;
+            }
+    
+            @media (max-width: 768px){
+                flex-basis: 100%;
+            }
+    
+            .user{
+                @include flex();
+                margin: 20px 0;
+    
+                h4{
+                    color: #0bb6ff;
+                }
+    
+                img{
+                    width: 25%;
+                    margin-right: 20px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

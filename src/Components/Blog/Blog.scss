@@ -1,0 +1,54 @@
+@import "../Styles/Styles.scss";
+.blog{
+    h2{@include Pd();}
+
+    .box-container{
+        @include grid2();
+
+        .box{
+            text-align: center;
+
+            &:hover .image img {
+                transform: scale(1.1);
+            }
+    
+            .image{
+                height: 25rem;
+                width: 90%;
+                overflow: hidden;
+                margin: 0 auto;
+                margin-bottom: -3rem;
+    
+                img{
+                    height: $width;
+                    width: $width;
+                    object-fit: cover;
+                    transition: .2s linear;
+                }
+            }
+
+            .content{
+                padding: 2rem;
+                padding-top: 5rem;
+                background: $white;
+                box-shadow: 0 0 1.5rem rgba(0,0,0,.2);
+       
+                h3{
+                   font-size: 2rem;
+                   font-weight: 700;
+                }
+
+                span{font-size: 15px;}
+       
+                p{
+                   padding:1rem 0;
+                   font-size: 1.4rem
+                }
+            }
+        }
+
+        @media (max-width: 768px){
+            @include media();
+        }
+    }
+}

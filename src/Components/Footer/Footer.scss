@@ -1,0 +1,91 @@
+@import "../Styles/Styles.scss";
+.footer{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: url(/src/image/footer_background.jpg) no-repeat;
+    background-position: center;
+    background-size: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+
+    .box-container{
+        @include grid();
+
+        .box{
+            color: $white-gray;
+    
+            h2{font-size: 2.7em; font-weight: 900; font-variant: small-caps; font-family: monospace; letter-spacing: .2em; color: $carrot-color;}
+    
+            .in-touch {
+                text-align: start;
+                
+                h3{padding-top: 2rem; font-size: 2rem; font-family: monospace;}
+    
+                p{
+                    font-size: 1.54rem;
+                    font-family: monospace;
+                }
+            }
+    
+            .day{
+               h5{padding-top: 3rem; font-size: 2rem; font-family: monospace;}
+    
+               .follow{
+                    padding-top: 2rem;
+                    
+                    h3{font-family: monospace;}
+    
+                    .icons{
+                        @include flex();
+                        text-align: center;
+                        justify-content: space-around;
+                        padding: 2rem 4rem;
+                        margin: 1rem;
+                        font-size: 2.5rem;
+    
+                        .fa:hover{
+                            color: $carrot-color;
+                        }
+                    }
+                }
+            }
+    
+            a{
+                display: block;
+                padding-top: 1.5rem;
+                font-variant: small-caps;
+                font-size: 2rem;
+                font-family: monospace;
+                color: aquamarine;
+                letter-spacing: 0.3em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &{@include block(); padding: 2rem; h2{padding-top: 3rem;}}
+        }
+    }
+
+    
+
+    img{
+        position: $absolute;
+        top: 0;
+        left: 0;
+        height: 10rem;
+        width: $width;
+    }
+
+    .credit {
+        text-align: center;
+        color: $white;
+        font-size: 2rem;
+        padding-bottom: 6rem;
+        margin-top: 2.5rem;
+
+        span {
+            color: $carrot-color;
+        }
+    }
+}

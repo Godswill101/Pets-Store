@@ -1,0 +1,73 @@
+@import "../Styles/Styles.scss";
+.newsletter{
+    @include flex();
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: space-around;
+    background: url(/src/image/footer_background.jpg) no-repeat center center/cover;
+    color: $white-gray;
+
+    h4{
+        font-size: 22px;
+        font-weight: 700;
+        color: $white;
+    }
+    
+    p{
+        font-size: 18px;
+        font-weight: 600;
+        color: #818ea0;
+
+        span{
+            color: #ffbd27;
+        }
+    }
+    
+    input{
+        height: 6.125rem;
+        padding: 0 1.25rem;
+        font-size: 14px;
+        width: $width;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    button.normal{
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px 30px;
+        color: $white;
+        background: #af0303;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        transition: 0.2s;
+    }
+    
+    button{
+        background: #088178;
+        color: $white-gray;
+        white-space: nowrap;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    
+    .form{
+        display: flex;
+        width: 40%;
+    }
+    
+    @media(max-width: 768px){
+        padding: 40px 20px;
+        input{
+            height: 6.4rem;
+        }
+        .form{
+          width: $width;
+        }
+    }
+}

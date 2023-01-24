@@ -1,0 +1,58 @@
+@import "../Styles/Styles.scss";
+.contact {
+    @include flex();
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    .image {
+        flex: $flex;
+
+        img {
+            width: $width;
+        }
+    }
+
+    form {
+        flex: $flex;
+        padding: 2rem 7%;
+
+        .btn {
+            width: $width;
+            text-align: center;
+
+            &:hover {
+                background: $black;
+            }
+        }
+
+        h3 {
+            color: $black;
+            font-size: 3rem;
+            font-family: monospace;
+            font-weight: 600;
+            padding-bottom: 1rem;
+
+            span {
+                color: $carrot-color;
+            }
+        }
+
+        .box,
+        textarea {
+            width: $width;
+            border-bottom: $border;
+            border-width: 0.1rem;
+            font-size: 1.6rem;
+            text-transform: none;
+            color: $black;
+            padding: 1.5rem 0;
+            margin: 1rem 0;
+        }
+
+        textarea {
+            height: 15rem;
+            resize: none;
+        }
+    }
+}
